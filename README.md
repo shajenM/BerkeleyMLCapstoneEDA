@@ -1,5 +1,5 @@
 ﻿# BerkeleyMLCapstoneEDA
-![PriceRange](histogramAbsentHours.PNG)
+![PriceRange](histogramAbsentHours.PNG = 250x250)
 <br>
 <br>
 
