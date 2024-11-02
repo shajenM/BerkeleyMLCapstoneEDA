@@ -1,6 +1,35 @@
 ﻿# BerkeleyMLCapstoneEDA
 <br>
-<br>
+
+### Business case
+In todays environment of workplace is extremely competitive and leads to increased stress and health issues. This project analyse relationships of workplace absenteeism and various factors. In this project absenteeism is defined as absence from work at normal hours.
+#### Dataset
+I have used a data set from Kaggle “Absenteeism_at_work_Project.xls”. 
+
+```
+The dataset have following fields:
+ID                                   int64
+Reason_for_absence                 float64
+Month_of_absence                   float64
+Day_of_the_week                      int64
+Seasons                              int64
+Transportation_expense             float64
+Distance_from_Residence_to_Work    float64
+Service_time                       float64
+Age                                float64
+Work_load_Average_per_day          float64
+Hit_target                         float64
+Disciplinary_failure               float64
+Education                          float64
+Children                           float64
+Social_drinker                     float64
+Social_smoker                      float64
+Pet                                float64
+Weight                             float64
+Height                             float64
+Body_mass_index                    float64
+Absenteeism_time_in_hours          float64
+```
 
 ## Feature Analysis
 Lets analyse each feature to find out their relation with the absenteeism.
@@ -215,4 +244,15 @@ Overall, heat map does not show any strong relation for being absent.
 <br>
 <img src="images/heat_map.png">
 
+### Feature Engineering
+Based on the above data analysis I ahve decided to drop the features ID, Height, Hit_target, Disciplinary_failure and Service_time, as they do not provide meaningfull contribution for training and some cases features like Height can be misleading. The feature 'Absenteeism_time_in_hours' is converted into  binary column 'Absent'
+One Hot encoding was applied to Education and Reason_for_absence
+
+### Modeling
+Initial modeling was performed using Logistic Regression. This provided an accurracy of 0.7271. Below table gives analysis of coefficients with odds ratio.
+
+<img src="images/oddsRatio.PNG">
+
+### Summary
+The exploratory analysis provided valuable information about each feature. The features Children, Transportation Expense, Seasons and medical reason 'Heath services and Patient management' are major contributors affecting the models.
 
