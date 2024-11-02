@@ -1,6 +1,5 @@
 ﻿# BerkeleyMLCapstoneEDA
 <br>
-<br>
 
 ### Business case
 In todays environment of workplace is extremely competitive and leads to increased stress and health issues. This project analyse relationships of workplace absenteeism and various factors. In this project absenteeism is defined as absence from work at normal hours.
@@ -252,5 +251,8 @@ One Hot encoding was applied to Education and Reason_for_absence
 ### Modeling
 Initial modeling was performed using Logistic Regression. This provided an accurracy of 0.7271. Below table gives analysis of coefficients with odds ratio.
 
+<img src="images/oddsRatio.PNG">
 
+### Summary
+The exploratory analysis provided valuable information about each feature. The features Children, Transportation Expense, Seasons and medical reason 'Heath services and Patient management' are major contributors affecting the models.
 
