@@ -256,3 +256,5 @@ Initial modeling was performed using Logistic Regression. This provided an accur
 ### Summary
 The exploratory analysis provided valuable information about each feature. The features Children, Transportation Expense, Seasons and medical reason 'Heath services and Patient management' are major contributors affecting the models.
 
+### Notebook
+  [Link to notebook](AbsenteeismEDA.ipynb)
